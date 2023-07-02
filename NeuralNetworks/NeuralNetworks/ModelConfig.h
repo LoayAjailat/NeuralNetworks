@@ -1,6 +1,10 @@
 #ifndef MODELCONFIG_H
 #define MODELCONFIG_H
 
+#include <vector>
+
+using namespace std;
+
 class ModelConfig {
 protected:
 	// NOTE: These variables should be available to other files
@@ -18,8 +22,11 @@ public:
 	// Functions
 	void setShape(int nodes, int inputs, int outputs);
 	void setHyperParameters(double lambda, double eta, double alpha);
+	double randomNumberGenerator(double a, double b);
 	void generateWeights();
 
+    vector<vector<double>> weights_nodes;
+    vector<vector<double>> weights_outputs;
 };
 
 #endif // MODELCONFIG_H

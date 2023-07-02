@@ -13,5 +13,6 @@ void Initialiser::initialise() {
     // NOTE: These variables should ideally be read from a config text file
     modelConfig.setShape(9, 3, 2);
     modelConfig.setHyperParameters(0.7, 0.8, 0.05);
+    modelConfig.generateWeights();
 	return;
 }
