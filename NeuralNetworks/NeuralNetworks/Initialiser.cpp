@@ -1,6 +1,6 @@
 #include "DataManager.h"
 #include "Initialiser.h"
-#include "ModelConfig.h"
+#include "Model.h"
 
 void Initialiser::initialise() {
     DataManager dataManager;
@@ -9,10 +9,10 @@ void Initialiser::initialise() {
     dataManager.shuffleData();
     dataManager.splitData();
 
-    ModelConfig modelConfig;
+    Model model;
     // NOTE: These variables should ideally be read from a config text file
-    modelConfig.setShape(9, 3, 2);
-    modelConfig.setHyperParameters(0.7, 0.8, 0.05);
-    modelConfig.generateWeights();
+    model.setShape(9, 3, 2);
+    model.setHyperParameters(0.7, 0.8, 0.05);
+    model.generateWeights();
 	return;
 }

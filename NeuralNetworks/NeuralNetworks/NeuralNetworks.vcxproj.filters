@@ -18,7 +18,7 @@
     <ClCompile Include="Initialiser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ModelConfig.cpp">
+    <ClCompile Include="Model.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source.cpp">
@@ -35,7 +35,7 @@
     <ClInclude Include="Initialiser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ModelConfig.h">
+    <ClInclude Include="Model.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DataManager.h">

@@ -1,11 +1,11 @@
-#include "ModelConfig.h"
+#include "Model.h"
 
 #include <iostream>
 #include <random>
 
 using namespace std;
 
-void ModelConfig::setShape(int nodes, int inputs, int outputs) {
+void Model::setShape(int nodes, int inputs, int outputs) {
 	this->nodes = nodes;
 	this->inputs = inputs;
 	this->outputs = outputs;
@@ -24,7 +24,7 @@ void ModelConfig::setShape(int nodes, int inputs, int outputs) {
 	cout << "Model shape set." << endl;
 }
 
-void ModelConfig::setHyperParameters(double lambda, double eta, double alpha) {
+void Model::setHyperParameters(double lambda, double eta, double alpha) {
 	this->lambda = lambda;
 	this->eta = eta;
 	this->alpha = alpha;
@@ -32,7 +32,7 @@ void ModelConfig::setHyperParameters(double lambda, double eta, double alpha) {
 	cout << "Lambda: " << this->lambda << ", Eta:" << this->eta << ", Alpha: " << this->alpha << endl;
 }
 
-double ModelConfig::randomNumberGenerator(double a, double b){
+double Model::randomNumberGenerator(double a, double b){
 	random_device rd; // Obtain a random seed from the hardware
     mt19937 gen(rd()); // Standard mersenne_twister_engine seeded with rd()
     uniform_real_distribution<double> dis(a, b); // Define the range
@@ -40,7 +40,7 @@ double ModelConfig::randomNumberGenerator(double a, double b){
     return dis(gen); // Generate and return a random number
 }
 
-void ModelConfig::generateWeights(){
+void Model::generateWeights(){
 	// Fill the weights vector with random values
     for (int i = 0; i < this->inputs; ++i) {
         for (int j = 0; j < this->nodes; ++j) {

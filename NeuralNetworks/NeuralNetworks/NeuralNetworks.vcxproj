@@ -141,14 +141,14 @@
   <ItemGroup>
     <ClCompile Include="DataManager.cpp" />
     <ClCompile Include="Initialiser.cpp" />
-    <ClCompile Include="ModelConfig.cpp" />
+    <ClCompile Include="Model.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Trainer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataManager.h" />
     <ClInclude Include="Initialiser.h" />
-    <ClInclude Include="ModelConfig.h" />
+    <ClInclude Include="Model.h" />
     <ClInclude Include="Trainer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,24 +1,18 @@
-#ifndef MODELCONFIG_H
-#define MODELCONFIG_H
+#ifndef MODEL_H
+#define MODEL_H
 
 #include <vector>
 
 using namespace std;
 
-class ModelConfig {
+class Model {
 protected:
-	// NOTE: These variables should be available to other files
-	// Shape
-	int nodes, inputs, outputs;
-	// Hyperparameters
-	double lambda, eta, alpha;
-
 public:
 	// Constructor
-	ModelConfig()
+	Model()
 		: nodes(0), inputs(0), outputs(0), lambda(0.0), eta(0.0), alpha(0.0) {}
 	// Destructor
-	~ModelConfig() {}
+	~Model() {}
 	// Functions
 	void setShape(int nodes, int inputs, int outputs);
 	void setHyperParameters(double lambda, double eta, double alpha);
@@ -27,6 +21,12 @@ public:
 
     vector<vector<double>> weights_nodes;
     vector<vector<double>> weights_outputs;
+
+	// NOTE: These variables should be available to other files
+	// Shape
+	int nodes, inputs, outputs;
+	// Hyperparameters
+	double lambda, eta, alpha;
 };
 
-#endif // MODELCONFIG_H
+#endif // MODEL_H
