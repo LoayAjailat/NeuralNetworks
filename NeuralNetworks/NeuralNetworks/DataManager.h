@@ -14,11 +14,11 @@ public:
 	// Destructor
 	~DataManager() {};
 	// Functions
-	void LoadData();
-	void NormalizeData();
-	void ShuffleData();
+	void loadData();
+	void normaliseData();
+	void shuffleData();
 
-	void SplitData();
+	void splitData();
 
 	// TODO: Encapsulate the important ones?
 	// TODO: Shouldn't these specific variables be in a different file so that the DataManager is OOP?

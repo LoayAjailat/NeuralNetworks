@@ -8,11 +8,12 @@
 #include "DataManager.h"
 #include "Initialiser.h"
 #include "ModelConfig.h"
+#include "Trainer.h"
 
 using namespace std;
 
 int main() {
     Initialiser initialiser;
-    initialiser.Initialise();
+    initialiser.initialise();
     return 1;
 }

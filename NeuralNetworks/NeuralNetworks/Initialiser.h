@@ -10,8 +10,7 @@ public:
 	~Initialiser() {};
 	// Functions
 
-	void GenerateWeights();
-	void Initialise();
+	void initialise();
 };
 
 #endif  // INITIALISER_H

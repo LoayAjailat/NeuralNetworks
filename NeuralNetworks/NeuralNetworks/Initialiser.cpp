@@ -2,12 +2,12 @@
 #include "Initialiser.h"
 #include "ModelConfig.h"
 
-void Initialiser::Initialise() {
+void Initialiser::initialise() {
     DataManager dataManager;
-    dataManager.LoadData();
-    dataManager.NormalizeData();
-    dataManager.ShuffleData();
-    dataManager.SplitData();
+    dataManager.loadData();
+    dataManager.normaliseData();
+    dataManager.shuffleData();
+    dataManager.splitData();
 
     ModelConfig modelConfig;
     // NOTE: These variables should ideally be read from a config text file

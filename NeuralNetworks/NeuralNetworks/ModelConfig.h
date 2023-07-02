@@ -3,6 +3,7 @@
 
 class ModelConfig {
 protected:
+	// NOTE: These variables should be available to other files
 	// Shape
 	int nodes, inputs, outputs;
 	// Hyperparameters
@@ -17,6 +18,7 @@ public:
 	// Functions
 	void setShape(int nodes, int inputs, int outputs);
 	void setHyperParameters(double lambda, double eta, double alpha);
+	void generateWeights();
 
 };
 

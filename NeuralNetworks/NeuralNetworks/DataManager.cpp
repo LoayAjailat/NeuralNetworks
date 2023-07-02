@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void DataManager::LoadData() {
+void DataManager::loadData() {
     ifstream file;
     string filename;
     cout << "Please enter a string: ";
@@ -49,7 +49,7 @@ void DataManager::LoadData() {
     return;
 }
 
-void DataManager::NormalizeData() {
+void DataManager::normaliseData() {
     int max_distance = 5000;
     int max_speed = 300;
     int minValue = 0;
@@ -67,7 +67,7 @@ void DataManager::NormalizeData() {
 }
 
 
-void DataManager::ShuffleData() {
+void DataManager::shuffleData() {
     // Create a random number generator
     random_device rd;
     mt19937 generator(rd());
@@ -81,7 +81,7 @@ void DataManager::ShuffleData() {
     cout << "Data shuffled." << endl;
 }
 
-void DataManager::SplitData() {
+void DataManager::splitData() {
     // Calculate the sizes of the training, testing, and validation sets
     size_t totalSize = sensor1.size();
     size_t trainingSize = static_cast<size_t>(totalSize * 0.7);
