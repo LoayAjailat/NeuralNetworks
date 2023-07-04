@@ -6,7 +6,6 @@
 #include <vector>
 
 #include "DataManager.h"
-#include "Initialiser.h"
 #include "Model.h"
 #include "Trainer.h"
 
@@ -27,11 +26,27 @@ void initialise() {
     model.setHyperParameters(0.7, 0.8, 0.05);
 
     model.generateWeights();
+
+    trainer.resizeVectors();
+
 	return;
 }
-int main() {
-    // Initialiser initialiser;
-    // initialiser.initialise();
+int main(int argc, char *argv[]) {
     initialise();
+
+    int counter = 0;
+    int epochTraining = 1000;
+    int stopTraining = 0;
+
+	for (int epoch = 0; (epoch < epochTraining) && stopTraining != 1; epoch++)
+	{
+		trainer.train();
+		stopTraining = trainer.validate(counter);
+        trainer.test();
+
+		counter++;
+		cout << "COUNTER: " << counter << "\n";
+	}
+   
     return 1;
 }

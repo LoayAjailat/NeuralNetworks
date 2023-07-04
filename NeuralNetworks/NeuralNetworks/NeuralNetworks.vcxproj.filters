@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Initialiser.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Model.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -32,9 +29,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Initialiser.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Model.h">
       <Filter>Header Files</Filter>
     </ClInclude>

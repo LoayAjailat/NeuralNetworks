@@ -140,14 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DataManager.cpp" />
-    <ClCompile Include="Initialiser.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Trainer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataManager.h" />
-    <ClInclude Include="Initialiser.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="Trainer.h" />
   </ItemGroup>

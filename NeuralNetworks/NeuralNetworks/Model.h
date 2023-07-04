@@ -11,6 +11,7 @@ public:
 	// Constructor
 	Model()
 		: nodes(0), inputs(0), outputs(0), lambda(0.0), eta(0.0), alpha(0.0) {}
+		// TODO: MUST assert alpha between 0 and 1
 	// Destructor
 	~Model() {}
 	// Functions

@@ -2,7 +2,6 @@
 #define DATAMANAGER_H
 
 #include <vector>
-#include <string>
 
 using namespace std;
 

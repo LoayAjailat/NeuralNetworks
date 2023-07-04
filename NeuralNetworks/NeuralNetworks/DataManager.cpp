@@ -104,6 +104,21 @@ void DataManager::splitData() {
     vector<double> validation_speed_left(speed_left.begin() + trainingSize + testingSize, speed_left.end());
     vector<double> validation_speed_right(speed_right.begin() + trainingSize + testingSize, speed_right.end());
 
+
+    train_sensor1 = training_sensor1;
+	train_sensor2 = training_sensor2;
+	train_speed_left = training_speed_left;
+	train_speed_right = training_speed_right;
+
+	test_sensor1 = testing_sensor1;
+	test_sensor2 = testing_sensor2;
+	test_speed_left = testing_speed_left;
+	test_speed_right = testing_speed_right;
+
+	validate_sensor1 = validation_sensor1;
+	validate_sensor2 = validation_sensor2;
+	validate_speed_left = validation_speed_left;
+	validate_speed_right = validation_speed_right;
     // Print the sizes of the training, testing, and validation sets
     cout << "Training set size: " << trainingSize << endl;
     cout << "Testing set size: " << testingSize << endl;
